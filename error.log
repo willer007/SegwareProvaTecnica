@@ -28,3 +28,11 @@
 2020-07-26 18:36:01.210 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
 2020-07-26 18:36:33.361 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
 2020-07-26 18:38:28.088 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 18:44:27.204 [Thread-3] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 18:44:28.472 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 19:04:34.002 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 19:07:49.996 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 19:09:05.833 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 19:15:23.567 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 19:18:31.129 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 19:21:39.098 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset

@@ -1,8 +1,12 @@
+entities\InfoUsuarioMessageEntity.class
 crccalc\Crc32.class
 crccalc\CrcCalculator.class
 entities\SolicitacaoDataHoraEntity.class
+entities\InvalidMessageEntity.class
 factories\AckFactory.class
+repositories\MessageRepository.class
 enums\FrameEnum.class
+converters\ByteArrayToHexStringConverter.class
 crccalc\AlgoParams.class
 crccalc\Crc8.class
 entities\InfoUsuarioEntity.class
@@ -11,4 +15,9 @@ crccalc\Crc16.class
 crccalc\Crc64.class
 factories\MessageFactory.class
 crccalc\CrcHelper.class
+entities\TextoMessageEntity.class
 utils\MessageUtils.class
+converters\ByteToIntConverter.class
+utils\HibernateUtils.class
+converters\ByteArrayToStringConverter.class
+entities\SolicitacaoDataHoraMessageEntity.class

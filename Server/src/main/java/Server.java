@@ -81,12 +81,14 @@ public class Server {
             logger.debug("ended to check CRC8");
 
 
+            //LOG MESSAGE TO FILE
+            logger.info("PORT: " + client.getPort()  + message);
+
             //SPECIFIC HANDLER FOR EACH MESSAGE TYPE
             frameEnum = FrameEnum.getEnumByBytes(message.getFrame()[0]);
             switch (frameEnum) {
                 case MENSAGEM_TEXTO:
                     logger.debug("handling MENSAGEM_TEXTO");
-                    logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_MENSAGEM_TEXTO();
                     TextoMessageEntity textoMessageEntity =
                             (TextoMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
@@ -95,7 +97,6 @@ public class Server {
 
                 case INFO_USUARIO:
                     logger.debug("handling INFO_USUARIO");
-                    logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_INFO_USUARIO();
                     InfoUsuarioMessageEntity infoUsuarioMessageEntity =
                             (InfoUsuarioMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
@@ -104,7 +105,6 @@ public class Server {
 
                 case SOLICITACAO_DATA_HORA:
                     logger.debug("handling SOLICITACAO_DATA_HORA");
-                    logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_SOLICITACAO_DATA_HORA();
                     SolicitacaoDataHoraMessageEntity solicitacaoDataHoraMessageEntity =
                             (SolicitacaoDataHoraMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
@@ -113,7 +113,6 @@ public class Server {
 
                 case INVALID:
                     logger.debug("handling INVALID");
-                    logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_INVALID();
                     InvalidMessageEntity invalidMessageEntity
                             = (InvalidMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
@@ -121,7 +120,6 @@ public class Server {
                     continue;
             }
 
-            //SAVE MESSAGE
         }
     }
 
@@ -130,8 +128,8 @@ public class Server {
         return this.server.getInetAddress();
     }
 
-    public int getPort() {
-        return this.server.getLocalPort();
+    public int getPort() {        return this.server.getLocalPort();
+
     }
 
     public static void main(String[] args) throws Exception {

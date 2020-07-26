@@ -3,6 +3,8 @@ import entities.MessageEntity;
 import entities.SolicitacaoDataHoraEntity;
 import enums.FrameEnum;
 import factories.MessageFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import utils.MessageUtils;
 
 import java.io.DataOutputStream;
@@ -16,6 +18,11 @@ public class Client {
     private Socket socket;
     private Scanner scanner;
     private static int PORT = 55000;
+    private static final Logger logger = LogManager.getLogger("client-logger");
+    MessageUtils messageUtils = new MessageUtils();
+    MessageFactory messageFactory = new MessageFactory();
+
+    FrameEnum frameEnum;
 
 
     private Client(InetAddress serverAddress) throws Exception {
@@ -23,75 +30,116 @@ public class Client {
         this.scanner = new Scanner(System.in);
     }
 
-    private void start() throws IOException {
-        MessageFactory messageFactory = new MessageFactory();
+    private void printMessageIdentifierInfo(){
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Identificadores de mensagem: ");
+        System.out.println("1 - Mensagem de texto");
+        System.out.println("2 - Informações de um usuário");
+        System.out.println("3 - Solicitacao de data e hora atual");
+
+        System.out.println();
+        System.out.println();
+
+    }
+
+    private MessageEntity sendMessage(String input, DataOutputStream out) throws IOException {
+        MessageEntity requestMessage;
+
+        //PREPARE MESSAGE TO SEND
+        int messageType = input.trim().charAt(0) - 48;
+        switch (messageType){
+            case 1:
+                System.out.println("Digite a mensagem: ");
+                input = scanner.nextLine();
+                requestMessage = messageFactory.buildTextMessage(input);
+                break;
+
+            case 2:
+                System.out.println("Digite a idade: ");
+                int idade = Integer.valueOf(scanner.nextLine());
+
+                System.out.println("Digite o peso: ");
+                int peso = Integer.valueOf(scanner.nextLine());
+
+                System.out.println("Digite a altura: ");
+                int altura = Integer.valueOf(scanner.nextLine());
+
+                System.out.println("Digite o nome: ");
+                String nome = scanner.nextLine();
+
+                InfoUsuarioEntity infoUsuarioDataEntity = new InfoUsuarioEntity((byte)idade,(byte)peso,(byte)altura,(byte) nome.length(),nome.getBytes());
+                requestMessage = messageFactory.buildInfoUsuarioMessage(infoUsuarioDataEntity);
+                break;
+
+            case 3:
+                System.out.println("O timezone: ");
+                input = scanner.nextLine();
+                requestMessage = messageFactory.buildSolicitacaoDataHoraMessage(input);
+                break;
+
+            default:
+                requestMessage = messageFactory.buildTextMessage(input);
+        }
+
+        //SEND MESSAGE
+        out.write(requestMessage.toByteArray());
+        out.flush();
+
+        return requestMessage;
+
+    }
+
+    private void readResponse() throws IOException {
+
         MessageEntity response = new MessageEntity();
-        MessageUtils messageUtils = new MessageUtils();
-        MessageEntity messageEntity = null;
-        FrameEnum frameEnum;
 
-        DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
+        //READ RESPONSE ACK
+        if (messageUtils.readMessage(socket, response)) {
 
-        String input;
+            frameEnum = FrameEnum.getEnumByBytes(response.getFrame()[0]);
+            switch (frameEnum) {
 
-        while (true) {
-
-            input = scanner.nextLine();
-
-
-            //PREPARE MESSAGE TO SEND
-            int messageType = input.charAt(0) - 48;
-            switch (messageType){
-                case 1:
-                    messageEntity = messageFactory.buildTextMessage(input);
+                case SOLICITACAO_DATA_HORA:
+                    SolicitacaoDataHoraEntity solicitacaoDataHora =
+                            new SolicitacaoDataHoraEntity(response.getData());
+                    System.out.println(solicitacaoDataHora.toString());
                     break;
 
-                case 2:
-                    InfoUsuarioEntity infoUsuarioDataEntity = new InfoUsuarioEntity((byte)32,(byte)122,(byte)195,(byte)12,"willer".getBytes());
-                    messageEntity = messageFactory.buildInfoUsuarioMessage(infoUsuarioDataEntity);
-                    break;
-
-                case 3:
-                    messageEntity = messageFactory.buildSolicitacaoDataHoraMessage("America/Sao_Paulo");
+                case ACK:
+                    System.out.println("Mensagem recebida pelo servidor !");
                     break;
 
                 default:
-                    messageEntity = messageFactory.buildTextMessage(input);
+                    System.out.println("Falha no servidor !");
+                    break;
             }
+        }
 
+    }
 
+    private void start() throws IOException {
+        MessageEntity requestMessage = null;
 
-            //SEND MESSAGE
-            out.write(messageEntity.toByteArray());
-            out.flush();
+        printMessageIdentifierInfo();
 
+        String input;
+        DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
 
+        while (true) {
 
-            //READ RESPONSE ACK
-            if (messageUtils.readMessage(socket, response)) {
+            System.out.println("Digite o identificador de mensagem: ");
+            input = scanner.nextLine();
 
-                frameEnum = FrameEnum.getEnumByBytes(response.getFrame()[0]);
-                switch (frameEnum) {
+            requestMessage =  sendMessage(input, out);
 
-                    case SOLICITACAO_DATA_HORA:
-                        SolicitacaoDataHoraEntity solicitacaoDataHora =
-                                new SolicitacaoDataHoraEntity(response.getData());
-                        break;
+            logger.info("PORT: " + socket.getPort()  + requestMessage.toByteArray());
 
-                    case ACK:
-                        System.out.println("Mensagem recebida pelo servidor !");
-                        break;
-
-                    default:
-                        System.out.println("Falha no servidor !");
-                        break;
-
-
-                }
-
-
-            }
-
+            readResponse();
+            
+            System.out.println();
+            System.out.println();
         }
     }
 
