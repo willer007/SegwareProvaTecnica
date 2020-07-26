@@ -103,7 +103,6 @@ public class Server {
 
         Server server = new Server();
         System.out.println("\r\nRunning Server: " +  "Host=" + server.getSocketAddress().getHostAddress() + " Port=" + server.getPort());
-
         server.receiveIncomingConnections();
     }
 

@@ -4,7 +4,7 @@ import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Arrays;
 
-public class InfoUsuarioDataEntity {
+public class InfoUsuarioEntity {
 
     private byte dataIDADE;
     private byte dataPESO;
@@ -52,7 +52,7 @@ public class InfoUsuarioDataEntity {
         this.dataNOME = dataNOME;
     }
 
-    public InfoUsuarioDataEntity(byte dataIDADE,byte dataPESO, byte dataALTURA, byte dataTAMANHO_NOME, byte[] dataNOME ){
+    public InfoUsuarioEntity(byte dataIDADE, byte dataPESO, byte dataALTURA, byte dataTAMANHO_NOME, byte[] dataNOME ){
         this.dataIDADE = dataIDADE ;
         this.dataPESO = dataPESO;
         this.dataALTURA = dataALTURA;
@@ -60,7 +60,7 @@ public class InfoUsuarioDataEntity {
         this.dataNOME = dataNOME;
     }
 
-    public InfoUsuarioDataEntity(byte [] data){
+    public InfoUsuarioEntity(byte [] data){
         this.dataIDADE = data[0] ;
         this.dataPESO = data[1] ;
         this.dataALTURA = data[2];

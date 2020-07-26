@@ -35,7 +35,7 @@ public class MessageUtils {
 
             //READ DATA
             message.setMessageDATA(new byte[message.getMessageBYTES()[0] - 5]);
-            if( IOUtils.read(client.getInputStream(), message.getMessageDATA()) == 0 ) {
+            if( IOUtils.read(client.getInputStream(), message.getMessageDATA()) != message.getMessageDATA().length ) {
                 return false;
             }
 

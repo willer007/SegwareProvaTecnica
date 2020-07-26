@@ -1,6 +1,6 @@
 package factories;
 
-import entities.InfoUsuarioDataEntity;
+import entities.InfoUsuarioEntity;
 import entities.MessageEntity;
 import utils.MessageUtils;
 
@@ -31,9 +31,9 @@ public class MessageFactory {
 
     }
 
-    public MessageEntity buildInfoUsuarioMessage(InfoUsuarioDataEntity infoUsuarioDataEntity){
+    public MessageEntity buildInfoUsuarioMessage(InfoUsuarioEntity infoUsuarioEntity){
 
-        return buildMessage((byte) 0xA2,infoUsuarioDataEntity.toByteArray());
+        return buildMessage((byte) 0xA2, infoUsuarioEntity.toByteArray());
     }
 
 

@@ -1,12 +1,11 @@
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import entities.InfoUsuarioDataEntity;
+import entities.InfoUsuarioEntity;
 import entities.MessageEntity;
+import entities.SolicitacaoDataHoraEntity;
 import enums.FrameEnum;
 import factories.MessageFactory;
-import org.apache.commons.lang3.ArrayUtils;
 import utils.MessageUtils;
 
-import java.io.DataInputStream;
+import javax.xml.bind.annotation.XmlType;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.InetAddress;
@@ -18,9 +17,7 @@ public class Client {
     private Socket socket;
     private Scanner scanner;
     private static int PORT = 55000;
-    private MessageFactory messageFactory;
-    private MessageEntity messageEntity;
-    private FrameEnum frameEnum;
+
 
     private Client(InetAddress serverAddress) throws Exception {
         this.socket = new Socket(serverAddress, PORT);
@@ -28,69 +25,76 @@ public class Client {
     }
 
     private void start() throws IOException {
+        MessageFactory messageFactory = new MessageFactory();
+        MessageEntity response = new MessageEntity();
+        MessageUtils messageUtils = new MessageUtils();
+        MessageEntity messageEntity = null;
+        FrameEnum frameEnum;
+
+        DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
+
         String input;
-
-        messageFactory = new MessageFactory();
-
-//          MENSAGEM DE TEXTO
-//        TESTADO E FUNCIONANDO FAZER TESTE UNITARIO DEPOIS
-//        while (true) {
-//
-//            input = scanner.nextLine();
-//
-//            messageEntity  = messageFactory.buildTextMessage(input);
-//
-//            DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
-//            out.write(messageEntity.toByteArray());
-//            out.flush();
-//        }
-
-        //MENSAGEM DE INFO DE USUARIO
-        //        TESTADO E FUNCIONANDO FAZER TESTE UNITARIO DEPOIS
-
-//        InfoUsuarioDataEntity infoUsuarioDataEntity = new InfoUsuarioDataEntity((byte)32,(byte)122,(byte)195,(byte)12,"teste".getBytes());
-//        while (true) {
-//
-//            input = scanner.nextLine();
-//
-//            messageEntity  = messageFactory.buildInfoUsuarioMessage(infoUsuarioDataEntity);
-//
-//            DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
-//            out.write(messageEntity.toByteArray());
-//            out.flush();
-//        }
-
-
-        //MENSAGEM DE SOLICITACAO DE DATA
-        //        TESTADO E FUNCIONANDO FAZER TESTE UNITARIO DEPOIS
 
         while (true) {
 
             input = scanner.nextLine();
 
-            messageEntity = messageFactory.buildSolicitacaoDataHoraMessage("America/Sao_Paulo");
 
-            DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
+            //PREPARE MESSAGE TO SEND
+            int messageType = input.charAt(0) - 48;
+            switch (messageType){
+                case 1:
+                    messageEntity = messageFactory.buildTextMessage(input);
+                    break;
 
+                case 2:
+                    InfoUsuarioEntity infoUsuarioDataEntity = new InfoUsuarioEntity((byte)32,(byte)122,(byte)195,(byte)12,"willer".getBytes());
+                    messageEntity = messageFactory.buildInfoUsuarioMessage(infoUsuarioDataEntity);
+                    break;
+
+                case 3:
+                    messageEntity = messageFactory.buildSolicitacaoDataHoraMessage("America/Sao_Paulo");
+                    break;
+
+                default:
+                    messageEntity = new MessageEntity();
+            }
+
+
+
+            //SEND MESSAGE
             out.write(messageEntity.toByteArray());
             out.flush();
 
-            MessageEntity response = new MessageEntity();
-            MessageUtils messageUtils = new MessageUtils();
 
 
+            //READ RESPONSE ACK
             if (messageUtils.readMessage(socket, response)) {
+
                 frameEnum = FrameEnum.getEnumByBytes(response.getMessageFRAME()[0]);
                 switch (frameEnum) {
+
                     case SOLICITACAO_DATA_HORA:
-                        for (byte b : response.getMessageDATA()) {
-                            System.out.println(Byte.toUnsignedInt(b));
-                        }
+                        SolicitacaoDataHoraEntity solicitacaoDataHora =
+                                new SolicitacaoDataHoraEntity(response.getMessageDATA());
+
+                        System.out.println("solicitacaoDataHora.getDataDIA() = " + solicitacaoDataHora.getDataDIA());
+                        System.out.println("solicitacaoDataHora.getDataMES() = " + solicitacaoDataHora.getDataMES());
+                        System.out.println("solicitacaoDataHora.getDataANO() = " + solicitacaoDataHora.getDataANO());
+                        System.out.println("solicitacaoDataHora.getDataHORA() = " + solicitacaoDataHora.getDataHORA());
+                        System.out.println("solicitacaoDataHora.getDataMINUTO() = " + solicitacaoDataHora.getDataMINUTO());
+                        System.out.println("solicitacaoDataHora.getDataSEGUNDO() = " + solicitacaoDataHora.getDataSEGUNDO());
+
                         break;
 
                     case ACK:
-                        System.out.println("Mensagem recebida pelo servidor");
+                        System.out.println("Mensagem recebida pelo servidor !");
                         break;
+
+                    default:
+                        System.out.println("Falha no servidor !");
+                        break;
+
 
                 }
 
@@ -102,15 +106,7 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
 
-        InetAddress ip;
-        String hostname;
-        ip = InetAddress.getLocalHost();
-        hostname = ip.getHostName();
-        System.out.println("Your current IP address : " + ip);
-        System.out.println("Your current Hostname : " + hostname);
-
-        Client client = new Client(ip);
-
+        Client client = new Client( InetAddress.getLocalHost());
         System.out.println("\r\nConnected to Server: " + client.socket.getInetAddress());
         client.start();
     }
