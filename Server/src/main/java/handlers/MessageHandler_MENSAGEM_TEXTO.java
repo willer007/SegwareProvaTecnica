@@ -15,13 +15,7 @@ public class MessageHandler_MENSAGEM_TEXTO implements IMessageHandler{
 
     @Override
     public MessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
-         int messageSize;
-
-
-        System.out.println(new String(message.getMessageDATA()));
-
         IOUtils.write(AckFactory.createAckA0().toByteArray(), out);
-
         return  message;
     }
 }

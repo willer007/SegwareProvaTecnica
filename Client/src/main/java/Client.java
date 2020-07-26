@@ -57,7 +57,7 @@ public class Client {
                     break;
 
                 default:
-                    messageEntity = new MessageEntity();
+                    messageEntity = messageFactory.buildTextMessage(input);
             }
 
 
@@ -78,13 +78,7 @@ public class Client {
                         SolicitacaoDataHoraEntity solicitacaoDataHora =
                                 new SolicitacaoDataHoraEntity(response.getMessageDATA());
 
-                        System.out.println("solicitacaoDataHora.getDataDIA() = " + solicitacaoDataHora.getDataDIA());
-                        System.out.println("solicitacaoDataHora.getDataMES() = " + solicitacaoDataHora.getDataMES());
-                        System.out.println("solicitacaoDataHora.getDataANO() = " + solicitacaoDataHora.getDataANO());
-                        System.out.println("solicitacaoDataHora.getDataHORA() = " + solicitacaoDataHora.getDataHORA());
-                        System.out.println("solicitacaoDataHora.getDataMINUTO() = " + solicitacaoDataHora.getDataMINUTO());
-                        System.out.println("solicitacaoDataHora.getDataSEGUNDO() = " + solicitacaoDataHora.getDataSEGUNDO());
-
+                        System.out.println(solicitacaoDataHora.toString());
                         break;
 
                     case ACK:

@@ -65,4 +65,17 @@ public class SolicitacaoDataHoraEntity {
         this.dataMINUTO = data[4];
         this.dataSEGUNDO = data[5];
     }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("\nSOLICITACAO DATA HORA:\n");
+        stringBuilder.append("DIA: " + this.dataDIA + "\n");
+        stringBuilder.append("MES: " +this.dataMES + "\n");
+        stringBuilder.append("ANO: " +this.dataANO + "\n");
+        stringBuilder.append("HORA: " +this.dataHORA + "\n");
+        stringBuilder.append("MINUTO: " +this.dataMINUTO + "\n") ;
+        stringBuilder.append("SEGUNDO: " +this.dataSEGUNDO + "\n") ;
+        return stringBuilder.toString();
+    }
 }

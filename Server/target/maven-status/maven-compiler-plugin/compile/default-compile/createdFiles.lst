@@ -1,0 +1,7 @@
+handlers\MessageHandler_INFO_USUARIO.class
+handlers\MessageHandler_SOLICITACAO_DATA_HORA.class
+handlers\IMessageHandler.class
+Server$1.class
+Server.class
+handlers\MessageHandler_INVALID.class
+handlers\MessageHandler_MENSAGEM_TEXTO.class

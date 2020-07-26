@@ -14,10 +14,7 @@ public class MessageHandler_INVALID implements IMessageHandler {
 
     @Override
     public MessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
-
-
         IOUtils.write(AckFactory.createAckA0().toByteArray(), out);
-
         return  message;
     }
 }

@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>MyServerSocket</mainClass>
+                            <mainClass>Client</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

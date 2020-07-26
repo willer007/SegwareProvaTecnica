@@ -75,4 +75,16 @@ public class InfoUsuarioEntity {
         byteArray = ArrayUtils.addAll(byteArray,this.getDataNOME());
         return byteArray;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("\nINFO USUARIO:\n");
+        stringBuilder.append("IDADE: " + this.dataIDADE + "\n");
+        stringBuilder.append("PESO: " + this.dataPESO + "\n");
+        stringBuilder.append("ALTURA: " + this.dataALTURA + "\n");
+        stringBuilder.append("TAMANHO NOME:" + this.dataTAMANHO_NOME + "\n");
+        stringBuilder.append("NOME: " + new String(this.dataNOME));
+        return stringBuilder.toString();
+    }
 }

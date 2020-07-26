@@ -20,15 +20,9 @@ import java.util.TimeZone;
 public class MessageHandler_SOLICITACAO_DATA_HORA  implements IMessageHandler {
     @Override
     public MessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
-
-
-
         Instant now = Instant.now();
         ZonedDateTime date = now.atZone(ZoneId.of(new String(message.getMessageDATA())));
         IOUtils.write(AckFactory.createAckA3(date).toByteArray(), out);
-
-
-
         return message;
     }
 }

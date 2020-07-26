@@ -1,0 +1,14 @@
+crccalc\Crc32.class
+crccalc\CrcCalculator.class
+entities\SolicitacaoDataHoraEntity.class
+factories\AckFactory.class
+enums\FrameEnum.class
+crccalc\AlgoParams.class
+crccalc\Crc8.class
+entities\InfoUsuarioEntity.class
+entities\MessageEntity.class
+crccalc\Crc16.class
+crccalc\Crc64.class
+factories\MessageFactory.class
+crccalc\CrcHelper.class
+utils\MessageUtils.class
