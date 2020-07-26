@@ -30,7 +30,7 @@ public class Client {
         this.scanner = new Scanner(System.in);
     }
 
-    private void printMessageIdentifierInfo(){
+    private void printMessageIdentifierInfo() {
         System.out.println();
         System.out.println();
 
@@ -49,7 +49,8 @@ public class Client {
 
         //PREPARE MESSAGE TO SEND
         int messageType = input.trim().charAt(0) - 48;
-        switch (messageType){
+
+        switch (messageType) {
             case 1:
                 System.out.println("Digite a mensagem: ");
                 input = scanner.nextLine();
@@ -69,7 +70,7 @@ public class Client {
                 System.out.println("Digite o nome: ");
                 String nome = scanner.nextLine();
 
-                InfoUsuarioEntity infoUsuarioDataEntity = new InfoUsuarioEntity((byte)idade,(byte)peso,(byte)altura,(byte) nome.length(),nome.getBytes());
+                InfoUsuarioEntity infoUsuarioDataEntity = new InfoUsuarioEntity((byte) idade, (byte) peso, (byte) altura, (byte) nome.length(), nome.getBytes());
                 requestMessage = messageFactory.buildInfoUsuarioMessage(infoUsuarioDataEntity);
                 break;
 
@@ -80,7 +81,7 @@ public class Client {
                 break;
 
             default:
-                requestMessage = messageFactory.buildTextMessage(input);
+                return  null;
         }
 
         //SEND MESSAGE
@@ -129,15 +130,27 @@ public class Client {
 
         while (true) {
 
+            //READ TYPE OF MESSAGE
             System.out.println("Digite o identificador de mensagem: ");
             input = scanner.nextLine();
 
-            requestMessage =  sendMessage(input, out);
+            //IF OCCUR ERROR COM TO NEXT ITERATION
+            if (input.trim().equals(""))
+                continue;
 
-            logger.info("PORT: " + socket.getPort()  + requestMessage.toByteArray());
+            //READ MESSAGE FROM USER AND SEND
+            requestMessage = sendMessage(input, out);
 
+            //IF OCCUR ERROR COM TO NEXT ITERATION
+            if(requestMessage == null)
+                continue;
+
+            //LOG MESSAGE TO FILE LOGGER
+            logger.info("PORT: " + socket.getPort() + requestMessage.toString());
+
+            //READ RESPONSE FROM SERVER
             readResponse();
-            
+
             System.out.println();
             System.out.println();
         }
@@ -145,7 +158,7 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
 
-        Client client = new Client( InetAddress.getLocalHost());
+        Client client = new Client(InetAddress.getLocalHost());
         System.out.println("\r\nConnected to Server: " + client.socket.getInetAddress());
         client.start();
     }

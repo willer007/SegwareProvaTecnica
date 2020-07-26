@@ -1,0 +1,75 @@
+2020-07-26 20:13:32.060 [main] INFO  client-logger - PORT: 55000[B@6c130c45
+2020-07-26 20:15:50.473 [main] INFO  client-logger - PORT: 55000[B@670b40af
+2020-07-26 20:15:54.666 [main] INFO  client-logger - PORT: 55000[B@6121c9d6
+2020-07-26 20:19:12.799 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 20:19:37.712 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 20:21:08.753 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 20:21:17.185 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 0f
+ FRAME: a2
+ DATA: 0a140a0677696c6c6572
+ CRC: 31
+ END: 0d
+2020-07-26 20:21:25.231 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 0b
+ FRAME: a1
+ DATA: 746573657465
+ CRC: a8
+ END: 0d
+2020-07-26 20:21:29.624 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 06
+ FRAME: a1
+ DATA: 35
+ CRC: fb
+ END: 0d
+2020-07-26 20:21:36.440 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 06
+ FRAME: a1
+ DATA: 35
+ CRC: fb
+ END: 0d
+2020-07-26 20:24:44.722 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-26 20:24:47.264 [main] INFO  client-logger - PORT: 55000
+MESSAGE:
+ INIT: 0a
+ BYTES: 0b
+ FRAME: a1
+ DATA: 746573746565
+ CRC: 23
+ END: 0d

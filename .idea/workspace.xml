@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd59c3e-a3b5-476b-ae77-1be54ce6bdf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/META-INF/Core.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_SOLICITACAO_DATA_HORA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_SOLICITACAO_DATA_HORA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/classes/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/Server$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_SOLICITACAO_DATA_HORA.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_SOLICITACAO_DATA_HORA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message.log" beforeDir="false" afterPath="$PROJECT_DIR$/message.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_message.log" beforeDir="false" afterPath="$PROJECT_DIR$/server_message.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="Client" />
@@ -114,8 +103,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
