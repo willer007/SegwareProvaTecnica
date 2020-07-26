@@ -5,19 +5,15 @@ import org.apache.commons.lang3.StringUtils;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Converter
-public class ByteArrayToHexStringConverter implements AttributeConverter<byte[] ,String> {
+public class ByteArrayToStringConverter implements AttributeConverter<byte[] ,String> {
 
 
 
     @Override
     public String convertToDatabaseColumn(byte[] bytes) {
-        return Hex.encodeHexString(bytes);
+        return new String(bytes);
     }
 
     @Override

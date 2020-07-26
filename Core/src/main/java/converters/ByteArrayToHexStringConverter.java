@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Converter
-public class ByteArrayToStringConverter implements AttributeConverter<byte[] ,String> {
+public class ByteArrayToHexStringConverter implements AttributeConverter<byte[] ,String> {
 
 
 

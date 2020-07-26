@@ -17,7 +17,7 @@ public class MessageFactory {
                 (byte) 0x00,
                 (byte) 0x0D);
 
-        messageEntity.setMessageCRC( new byte[]{(byte) messageUtils.calcMessageCRC8(messageEntity)});
+        messageEntity.setCrc( new byte[]{(byte) messageUtils.calcMessageCRC8(messageEntity)});
 
         return messageEntity;
 

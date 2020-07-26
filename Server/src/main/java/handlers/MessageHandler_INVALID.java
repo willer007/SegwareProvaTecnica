@@ -1,6 +1,7 @@
 package handlers;
 
 import crccalc.CrcCalculator;
+import entities.InvalidMessageEntity;
 import entities.MessageEntity;
 import factories.AckFactory;
 import org.apache.commons.io.IOUtils;
@@ -10,11 +11,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class MessageHandler_INVALID implements IMessageHandler {
+public class MessageHandler_INVALID implements IMessageHandler<InvalidMessageEntity> {
 
     @Override
-    public MessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
+    public InvalidMessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
         IOUtils.write(AckFactory.createAckA0().toByteArray(), out);
-        return  message;
+        InvalidMessageEntity invalidMessageEntity = new InvalidMessageEntity().fromMessageEntity(message);
+        invalidMessageEntity.setTexto("Erro no servidor");
+        return  invalidMessageEntity;
     }
 }

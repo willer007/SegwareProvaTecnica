@@ -1,21 +1,21 @@
 package handlers;
 
-import crccalc.CrcCalculator;
 import entities.MessageEntity;
+import entities.TextoMessageEntity;
 import factories.AckFactory;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang3.ArrayUtils;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 
-public class MessageHandler_MENSAGEM_TEXTO implements IMessageHandler{
+public class MessageHandler_MENSAGEM_TEXTO implements IMessageHandler<TextoMessageEntity>{
 
 
     @Override
-    public MessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
+    public TextoMessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
         IOUtils.write(AckFactory.createAckA0().toByteArray(), out);
-        return  message;
+        TextoMessageEntity textoMessageEntity = new TextoMessageEntity().fromMessageEntity(message);
+        textoMessageEntity.setTexto(new String(message.getData()));
+        return  textoMessageEntity;
     }
 }

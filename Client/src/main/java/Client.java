@@ -5,7 +5,6 @@ import enums.FrameEnum;
 import factories.MessageFactory;
 import utils.MessageUtils;
 
-import javax.xml.bind.annotation.XmlType;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.InetAddress;
@@ -71,14 +70,12 @@ public class Client {
             //READ RESPONSE ACK
             if (messageUtils.readMessage(socket, response)) {
 
-                frameEnum = FrameEnum.getEnumByBytes(response.getMessageFRAME()[0]);
+                frameEnum = FrameEnum.getEnumByBytes(response.getFrame()[0]);
                 switch (frameEnum) {
 
                     case SOLICITACAO_DATA_HORA:
                         SolicitacaoDataHoraEntity solicitacaoDataHora =
-                                new SolicitacaoDataHoraEntity(response.getMessageDATA());
-
-                        System.out.println(solicitacaoDataHora.toString());
+                                new SolicitacaoDataHoraEntity(response.getData());
                         break;
 
                     case ACK:

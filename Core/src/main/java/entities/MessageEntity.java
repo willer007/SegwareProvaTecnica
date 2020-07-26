@@ -1,109 +1,144 @@
 package entities;
 
+import converters.ByteArrayToHexStringConverter;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.ArrayUtils;
 
-public class MessageEntity {
+import javax.persistence.*;
 
 
-    private byte[] messageINIT = new byte[1];
-    private byte[] messageBYTES = new byte[1];
-    private byte[] messageFRAME = new byte[1];
-    private byte[] messageDATA;
-    private byte[] messageCRC = new byte[1];
-    private byte[] messageEND = new byte[1];
 
-    public MessageEntity() {
+@Entity
+@Table(name = "message")
+@Inheritance(strategy = InheritanceType.JOINED)
+public class MessageEntity <T> {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    protected int id;
+
+    @Column(name = "init")
+    @Convert(converter = ByteArrayToHexStringConverter.class)
+    protected byte[] init = new byte[1];
+
+    @Column(name = "bytes")
+    @Convert(converter = ByteArrayToHexStringConverter.class)
+    protected byte[] bytes = new byte[1];
+
+    @Column(name = "frame")
+    @Convert(converter = ByteArrayToHexStringConverter.class)
+    protected byte[] frame = new byte[1];
+
+    @Column(name = "data")
+    @Convert(converter = ByteArrayToHexStringConverter.class)
+    protected byte[] data;
+
+    @Column(name = "crc")
+    @Convert(converter = ByteArrayToHexStringConverter.class)
+    protected byte[] crc = new byte[1];
+
+    @Column(name = "end")
+    @Convert(converter = ByteArrayToHexStringConverter.class)
+    protected byte[] end = new byte[1];
+
+    public MessageEntity() { }
+
+
+    public MessageEntity(byte[] init,
+                         byte[] bytes,
+                         byte[] frame,
+                         byte[] data,
+                         byte[] crc,
+                         byte[] end) {
+
+
+        this.init = init;
+        this.bytes = bytes;
+        this.frame = frame;
+        this.data = data;
+        this.crc = crc;
+        this.end = end;
     }
 
-    ;
-
-    public MessageEntity(byte[] messageINIT,
-                         byte[] messageBYTES,
-                         byte[] messageFRAME,
-                         byte[] messageDATA,
-                         byte[] messageCRC,
-                         byte[] messageEND) {
+    public MessageEntity(byte init,
+                         byte bytes,
+                         byte frame,
+                         byte[] data,
+                         byte crc,
+                         byte end) {
 
 
-        this.messageINIT = messageINIT;
-        this.messageBYTES = messageBYTES;
-        this.messageFRAME = messageFRAME;
-        this.messageDATA = messageDATA;
-        this.messageCRC = messageCRC;
-        this.messageEND = messageEND;
+        this.init = new byte[]{init};
+        this.bytes = new byte[]{bytes};
+        this.frame = new byte[]{frame};
+        this.data = data;
+        this.crc = new byte[]{crc};
+        this.end = new byte[]{end};
     }
 
-    public MessageEntity(byte messageINIT,
-                         byte messageBYTES,
-                         byte messageFRAME,
-                         byte[] messageDATA,
-                         byte messageCRC,
-                         byte messageEND) {
-
-
-        this.messageINIT = new byte[]{messageINIT};
-        this.messageBYTES = new byte[]{messageBYTES};
-        this.messageFRAME = new byte[]{messageFRAME};
-        this.messageDATA = messageDATA;
-        this.messageCRC = new byte[]{messageCRC};
-        this.messageEND = new byte[]{messageEND};
+    public int getId() {
+        return id;
     }
 
-    public byte[] getMessageINIT() {
-        return messageINIT;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setMessageINIT(byte[] messageINIT) {
-        this.messageINIT = messageINIT;
+    public byte[] getInit() {
+        return init;
     }
 
-    public byte[] getMessageBYTES() {
-        return messageBYTES;
+    public void setInit(byte[] init) {
+        this.init = init;
     }
 
-    public void setMessageBYTES(byte[] messageBYTES) {
-        this.messageBYTES = messageBYTES;
+    public byte[] getBytes() {
+        return bytes;
     }
 
-    public byte[] getMessageFRAME() {
-        return messageFRAME;
+    public void setBytes(byte[] bytes) {
+        this.bytes = bytes;
     }
 
-    public void setMessageFRAME(byte[] messageFRAME) {
-        this.messageFRAME = messageFRAME;
+    public byte[] getFrame() {
+        return frame;
     }
 
-    public byte[] getMessageDATA() {
-        return messageDATA;
+    public void setFrame(byte[] frame) {
+        this.frame = frame;
     }
 
-    public void setMessageDATA(byte[] messageDATA) {
-        this.messageDATA = messageDATA;
+    public byte[] getData() {
+        return data;
     }
 
-    public byte[] getMessageCRC() {
-        return messageCRC;
+    public void setData(byte[] data) {
+        this.data = data;
     }
 
-    public void setMessageCRC(byte[] messageCRC) {
-        this.messageCRC = messageCRC;
+    public byte[] getCrc() {
+        return crc;
     }
 
-    public byte[] getMessageEND() {
-        return messageEND;
+    public void setCrc(byte[] crc) {
+        this.crc = crc;
     }
 
-    public void setMessageEND(byte[] messageEND) {
-        this.messageEND = messageEND;
+    public byte[] getEnd() {
+        return end;
+    }
+
+    public void setEnd(byte[] end) {
+        this.end = end;
     }
 
     public byte[] toByteArray() {
-        byte[] byteArray = ArrayUtils.addAll(this.getMessageINIT(), this.getMessageBYTES());
-        byteArray = ArrayUtils.addAll(byteArray, this.getMessageFRAME());
-        byteArray = ArrayUtils.addAll(byteArray, this.getMessageDATA());
-        byteArray = ArrayUtils.addAll(byteArray, this.getMessageCRC());
-        byteArray = ArrayUtils.addAll(byteArray, this.getMessageEND());
+        byte[] byteArray = ArrayUtils.addAll(this.getInit(), this.getBytes());
+        byteArray = ArrayUtils.addAll(byteArray, this.getFrame());
+        byteArray = ArrayUtils.addAll(byteArray, this.getData());
+        byteArray = ArrayUtils.addAll(byteArray, this.getCrc());
+        byteArray = ArrayUtils.addAll(byteArray, this.getEnd());
         return byteArray;
     }
 
@@ -112,13 +147,27 @@ public class MessageEntity {
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("\nMESSAGE:\n");
-        stringBuilder.append(" INIT: " +  Hex.encodeHexString(messageINIT) + "\n");
-        stringBuilder.append(" BYTES: " + Hex.encodeHexString(messageBYTES) + "\n");
-        stringBuilder.append(" FRAME: " + Hex.encodeHexString(messageFRAME) + "\n");
-        stringBuilder.append(" DATA: " +  Hex.encodeHexString(messageDATA) + "\n");
-        stringBuilder.append(" CRC: " +   Hex.encodeHexString(messageCRC) + "\n");
-        stringBuilder.append(" END: " +   Hex.encodeHexString(messageEND) );
+        stringBuilder.append(" INIT: " +  Hex.encodeHexString(init) + "\n");
+        stringBuilder.append(" BYTES: " + Hex.encodeHexString(bytes) + "\n");
+        stringBuilder.append(" FRAME: " + Hex.encodeHexString(frame) + "\n");
+        stringBuilder.append(" DATA: " +  Hex.encodeHexString(data) + "\n");
+        stringBuilder.append(" CRC: " +   Hex.encodeHexString(crc) + "\n");
+        stringBuilder.append(" END: " +   Hex.encodeHexString(end) );
 
         return stringBuilder.toString();
     }
+
+    public T fromMessageEntity(MessageEntity messageEntity){
+
+        this.init = messageEntity.init;
+        this.bytes = messageEntity.bytes;
+        this.frame = messageEntity.frame;
+        this.data = messageEntity.data;
+        this.crc = messageEntity.crc;
+        this.end = messageEntity.end;
+
+        return (T) this;
+    }
+
+
 }

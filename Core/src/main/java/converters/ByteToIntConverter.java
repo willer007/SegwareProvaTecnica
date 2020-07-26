@@ -1,30 +1,20 @@
 package converters;
 
-import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.lang3.StringUtils;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Converter
-public class ByteArrayToHexStringConverter implements AttributeConverter<byte[] ,String> {
-
+public class ByteToIntConverter implements AttributeConverter<Byte, Integer> {
 
 
     @Override
-    public String convertToDatabaseColumn(byte[] bytes) {
-        return Hex.encodeHexString(bytes);
+    public Integer convertToDatabaseColumn(Byte aByte) {
+        return Byte.toUnsignedInt(aByte);
     }
 
     @Override
-    public byte[] convertToEntityAttribute(String dbData) {
-        if (StringUtils.isBlank(dbData))
-            return new byte[0];
-
-        return dbData.getBytes();
+    public Byte convertToEntityAttribute(Integer integer) {
+        return integer.byteValue();
     }
 }

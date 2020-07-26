@@ -3,11 +3,9 @@ package entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "message_invalid")
+@Table(name = "message_texto")
 @PrimaryKeyJoinColumn(name="id")
-public class InvalidMessageEntity extends MessageEntity<InvalidMessageEntity> {
-
-
+public class TextoMessageEntity extends MessageEntity<TextoMessageEntity> {
 
     @Column(name = "texto")
     protected String texto;

@@ -14,40 +14,40 @@ public class MessageUtils {
 
 
         //READ INIT
-        if( IOUtils.read(client.getInputStream(), message.getMessageINIT()) == 0) {
+        if( IOUtils.read(client.getInputStream(), message.getInit()) == 0) {
             return false;
         }
 
 
         //IS VALID MESSAGE
-        if (message.getMessageINIT()[0] == 10) {
+        if (message.getInit()[0] == 10) {
 
             //READ BYTES
-            if( IOUtils.read(client.getInputStream(), message.getMessageBYTES()) == 0) {
+            if( IOUtils.read(client.getInputStream(), message.getBytes()) == 0) {
                 return false;
             }
 
             //READ FRAME
-            if( IOUtils.read(client.getInputStream(), message.getMessageFRAME()) == 0) {
+            if( IOUtils.read(client.getInputStream(), message.getFrame()) == 0) {
                 return false;
             }
 
 
             //READ DATA
-            message.setMessageDATA(new byte[message.getMessageBYTES()[0] - 5]);
-            if( IOUtils.read(client.getInputStream(), message.getMessageDATA()) != message.getMessageDATA().length ) {
+            message.setData(new byte[message.getBytes()[0] - 5]);
+            if( IOUtils.read(client.getInputStream(), message.getData()) != message.getData().length ) {
                 return false;
             }
 
 
             //READ CRC
-            if( IOUtils.read(client.getInputStream(), message.getMessageCRC()) == 0) {
+            if( IOUtils.read(client.getInputStream(), message.getCrc()) == 0) {
                 return false;
             }
 
 
             //READ END
-            if( IOUtils.read(client.getInputStream(), message.getMessageEND()) == 0) {
+            if( IOUtils.read(client.getInputStream(), message.getEnd()) == 0) {
                 return false;
             }
 
@@ -63,7 +63,7 @@ public class MessageUtils {
 
         long calcCrc = calcMessageCRC8(calculator, message);
         //VERIFY INTEGRITY
-        if ((byte) calcCrc == message.getMessageCRC()[0])
+        if ((byte) calcCrc == message.getCrc()[0])
             return true;
         else
             return false;
@@ -73,8 +73,8 @@ public class MessageUtils {
     public long calcMessageCRC8(CrcCalculator calculator, MessageEntity message){
 
         //CALCULATE CRC8
-        byte[] crcBytes =ArrayUtils.addAll (message.getMessageBYTES(), message.getMessageFRAME());
-        crcBytes = ArrayUtils.addAll(crcBytes, message.getMessageDATA());
+        byte[] crcBytes =ArrayUtils.addAll (message.getBytes(), message.getFrame());
+        crcBytes = ArrayUtils.addAll(crcBytes, message.getData());
        return calculator.Calc(crcBytes, 0, crcBytes.length);
 
     }
@@ -83,8 +83,8 @@ public class MessageUtils {
     public long calcMessageCRC8(MessageEntity message){
 
         CrcCalculator calculator = new CrcCalculator(Crc8.Crc8);
-        byte[] crcBytes = ArrayUtils.addAll (message.getMessageBYTES(), message.getMessageFRAME());
-        crcBytes = ArrayUtils.addAll(crcBytes, message.getMessageDATA());
+        byte[] crcBytes = ArrayUtils.addAll (message.getBytes(), message.getFrame());
+        crcBytes = ArrayUtils.addAll(crcBytes, message.getData());
         return calculator.Calc(crcBytes, 0, crcBytes.length);
 
     }

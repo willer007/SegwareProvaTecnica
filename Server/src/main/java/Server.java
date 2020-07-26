@@ -1,10 +1,11 @@
+import entities.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import crccalc.Crc8;
 import crccalc.CrcCalculator;
 import enums.FrameEnum;
-import entities.MessageEntity;
 import handlers.*;
+import repositories.MessageRepository;
 import utils.MessageUtils;
 
 
@@ -58,6 +59,7 @@ public class Server {
         MessageUtils messageUtils = new MessageUtils();
         MessageEntity message = new MessageEntity();
         CrcCalculator calculator = new CrcCalculator(Crc8.Crc8);
+        MessageRepository messageRepository = new MessageRepository();
         IMessageHandler messageHandler;
         FrameEnum frameEnum = null;
 
@@ -80,38 +82,46 @@ public class Server {
 
 
             //SPECIFIC HANDLER FOR EACH MESSAGE TYPE
-            frameEnum = FrameEnum.getEnumByBytes(message.getMessageFRAME()[0]);
+            frameEnum = FrameEnum.getEnumByBytes(message.getFrame()[0]);
             switch (frameEnum) {
                 case MENSAGEM_TEXTO:
                     logger.debug("handling MENSAGEM_TEXTO");
                     logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_MENSAGEM_TEXTO();
-                    messageHandler.handleMessage(message, client.getOutputStream());
+                    TextoMessageEntity textoMessageEntity =
+                            (TextoMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
+                    messageRepository.saveMessage(textoMessageEntity) ;
                     break;
 
                 case INFO_USUARIO:
                     logger.debug("handling INFO_USUARIO");
                     logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_INFO_USUARIO();
-                    messageHandler.handleMessage(message, client.getOutputStream());
+                    InfoUsuarioMessageEntity infoUsuarioMessageEntity =
+                            (InfoUsuarioMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
+                    messageRepository.saveMessage(infoUsuarioMessageEntity) ;
                     break;
 
                 case SOLICITACAO_DATA_HORA:
                     logger.debug("handling SOLICITACAO_DATA_HORA");
                     logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_SOLICITACAO_DATA_HORA();
-                    messageHandler.handleMessage(message, client.getOutputStream());
+                    SolicitacaoDataHoraMessageEntity solicitacaoDataHoraMessageEntity =
+                            (SolicitacaoDataHoraMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
+                    messageRepository.saveMessage(solicitacaoDataHoraMessageEntity) ;
                     break;
 
                 case INVALID:
                     logger.debug("handling INVALID");
                     logger.info("PORT: " + client.getPort()  + message);
                     messageHandler = new MessageHandler_INVALID();
-                    messageHandler.handleMessage(message, client.getOutputStream());
-                    break;
-
+                    InvalidMessageEntity invalidMessageEntity
+                            = (InvalidMessageEntity) messageHandler.handleMessage(message, client.getOutputStream());
+                    messageRepository.saveMessage(invalidMessageEntity) ;
+                    continue;
             }
 
+            //SAVE MESSAGE
         }
     }
 
@@ -125,7 +135,6 @@ public class Server {
     }
 
     public static void main(String[] args) throws Exception {
-
         Server server = new Server();
         System.out.println("\r\nRunning Server: " + "Host=" + server.getSocketAddress().getHostAddress() + " Port=" + server.getPort());
         server.receiveIncomingConnections();

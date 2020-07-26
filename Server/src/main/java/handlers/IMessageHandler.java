@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public interface IMessageHandler {
+public interface IMessageHandler   <T> {
 
-    MessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException;
+    T handleMessage(MessageEntity message, OutputStream out) throws IOException;
 
 
 

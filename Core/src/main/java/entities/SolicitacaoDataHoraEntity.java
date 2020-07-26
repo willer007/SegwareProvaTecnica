@@ -1,81 +1,97 @@
 package entities;
 
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@Entity
 public class SolicitacaoDataHoraEntity {
-    private byte dataDIA;
-    private byte dataMES;
-    private byte dataANO;
-    private byte dataHORA;
-    private byte dataMINUTO;
-    private byte dataSEGUNDO;
 
-    public byte getDataDIA() {
-        return dataDIA;
+    @Column(name = "dia")
+    protected byte dia;
+
+    @Column(name = "mes")
+    protected byte mes;
+
+    @Column(name = "ano")
+    protected byte ano;
+
+    @Column(name = "hora")
+    protected byte hora;
+
+    @Column(name = "minuto")
+    protected byte minuto;
+
+    @Column(name = "segundo")
+    protected byte segundo;
+
+    public byte getDia() {
+        return dia;
     }
 
-    public void setDataDIA(byte dataDIA) {
-        this.dataDIA = dataDIA;
+    public void setDia(byte dia) {
+        this.dia = dia;
     }
 
-    public byte getDataMES() {
-        return dataMES;
+    public byte getMes() {
+        return mes;
     }
 
-    public void setDataMES(byte dataMES) {
-        this.dataMES = dataMES;
+    public void setMes(byte mes) {
+        this.mes = mes;
     }
 
-    public byte getDataANO() {
-        return dataANO;
+    public byte getAno() {
+        return ano;
     }
 
-    public void setDataANO(byte dataANO) {
-        this.dataANO = dataANO;
+    public void setAno(byte ano) {
+        this.ano = ano;
     }
 
-    public byte getDataHORA() {
-        return dataHORA;
+    public byte getHora() {
+        return hora;
     }
 
-    public void setDataHORA(byte dataHORA) {
-        this.dataHORA = dataHORA;
+    public void setHora(byte hora) {
+        this.hora = hora;
     }
 
-    public byte getDataMINUTO() {
-        return dataMINUTO;
+    public byte getMinuto() {
+        return minuto;
     }
 
-    public void setDataMINUTO(byte dataMINUTO) {
-        this.dataMINUTO = dataMINUTO;
+    public void setMinuto(byte minuto) {
+        this.minuto = minuto;
     }
 
-    public byte getDataSEGUNDO() {
-        return dataSEGUNDO;
+    public byte getSegundo() {
+        return segundo;
     }
 
-    public void setDataSEGUNDO(byte dataSEGUNDO) {
-        this.dataSEGUNDO = dataSEGUNDO;
+    public void setSegundo(byte segundo) {
+        this.segundo = segundo;
     }
 
     public SolicitacaoDataHoraEntity(byte [] data){
-        this.dataDIA = data[0] ;
-        this.dataMES = data[1] ;
-        this.dataANO = data[2];
-        this.dataHORA = data[3];
-        this.dataMINUTO = data[4];
-        this.dataSEGUNDO = data[5];
+        this.dia = data[0] ;
+        this.mes = data[1] ;
+        this.ano = data[2];
+        this.hora = data[3];
+        this.minuto = data[4];
+        this.segundo = data[5];
     }
 
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("\nSOLICITACAO DATA HORA:\n");
-        stringBuilder.append("DIA: " + this.dataDIA + "\n");
-        stringBuilder.append("MES: " +this.dataMES + "\n");
-        stringBuilder.append("ANO: " +this.dataANO + "\n");
-        stringBuilder.append("HORA: " +this.dataHORA + "\n");
-        stringBuilder.append("MINUTO: " +this.dataMINUTO + "\n") ;
-        stringBuilder.append("SEGUNDO: " +this.dataSEGUNDO + "\n") ;
+        stringBuilder.append("DIA: " + this.dia + "\n");
+        stringBuilder.append("MES: " +this.mes + "\n");
+        stringBuilder.append("ANO: " +this.ano + "\n");
+        stringBuilder.append("HORA: " +this.hora + "\n");
+        stringBuilder.append("MINUTO: " +this.minuto + "\n") ;
+        stringBuilder.append("SEGUNDO: " +this.segundo + "\n") ;
         return stringBuilder.toString();
     }
 }

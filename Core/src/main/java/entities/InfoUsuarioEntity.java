@@ -1,78 +1,95 @@
 package entities;
 
+import converters.ByteArrayToHexStringConverter;
+import converters.ByteArrayToStringConverter;
+import converters.ByteToIntConverter;
 import org.apache.commons.lang3.ArrayUtils;
 
+import javax.persistence.Convert;
+import javax.persistence.Embeddable;
 import java.util.Arrays;
 
+@Embeddable
 public class InfoUsuarioEntity {
 
-    private byte dataIDADE;
-    private byte dataPESO;
-    private byte dataALTURA;
-    private byte dataTAMANHO_NOME;
-    private byte[] dataNOME;
+    public InfoUsuarioEntity(){}
 
-    public byte getDataIDADE() {
-        return dataIDADE;
+    @Convert(converter = ByteToIntConverter.class)
+    protected byte idade;
+
+    @Convert(converter = ByteToIntConverter.class)
+    protected byte peso;
+
+    @Convert(converter = ByteToIntConverter.class)
+    protected byte altura;
+
+    @Convert(converter = ByteToIntConverter.class)
+    protected byte tamanhoNome;
+
+    @Convert(converter = ByteArrayToStringConverter.class)
+    protected byte[] nome;
+
+    public byte getIdade() {
+        return idade;
     }
 
-    public void setDataIDADE(byte dataIDADE) {
-        this.dataIDADE = dataIDADE;
+    public void setIdade(byte idade) {
+        this.idade = idade;
     }
 
-    public byte getDataPESO() {
-        return dataPESO;
+    public byte getPeso() {
+        return peso;
     }
 
-    public void setDataPESO(byte dataPESO) {
-        this.dataPESO = dataPESO;
+    public void setPeso(byte peso) {
+        this.peso = peso;
     }
 
-    public byte getDataALTURA() {
-        return dataALTURA;
+    public byte getAltura() {
+        return altura;
     }
 
-    public void setDataALTURA(byte dataALTURA) {
-        this.dataALTURA = dataALTURA;
+    public void setAltura(byte altura) {
+        this.altura = altura;
     }
 
-    public byte getDataTAMANHO_NOME() {
-        return dataTAMANHO_NOME;
+    public byte getTamanhoNome() {
+        return tamanhoNome;
     }
 
-    public void setDataTAMANHO_NOME(byte dataTAMANHO_NOME) {
-        this.dataTAMANHO_NOME = dataTAMANHO_NOME;
+    public void setTamanhoNome(byte tamanhoNome) {
+        this.tamanhoNome = tamanhoNome;
     }
 
-    public byte[] getDataNOME() {
-        return dataNOME;
+    public byte[] getNome() {
+        return nome;
     }
 
-    public void setDataNOME(byte[] dataNOME) {
-        this.dataNOME = dataNOME;
+    public void setNome(byte[] nome) {
+        this.nome = nome;
     }
 
-    public InfoUsuarioEntity(byte dataIDADE, byte dataPESO, byte dataALTURA, byte dataTAMANHO_NOME, byte[] dataNOME ){
-        this.dataIDADE = dataIDADE ;
-        this.dataPESO = dataPESO;
-        this.dataALTURA = dataALTURA;
-        this.dataTAMANHO_NOME = dataTAMANHO_NOME;
-        this.dataNOME = dataNOME;
+    public InfoUsuarioEntity(byte idade, byte peso, byte altura, byte tamanhoNome, byte[] nome){
+        this.idade = idade;
+        this.peso = peso;
+        this.altura = altura;
+        this.tamanhoNome = tamanhoNome;
+        this.nome = nome;
     }
 
     public InfoUsuarioEntity(byte [] data){
-        this.dataIDADE = data[0] ;
-        this.dataPESO = data[1] ;
-        this.dataALTURA = data[2];
-        this.dataTAMANHO_NOME = data[3];
-        this.dataNOME = Arrays.copyOfRange(data,4,4 + dataTAMANHO_NOME);
+        this.idade = data[0] ;
+        this.peso = data[1] ;
+        this.altura = data[2];
+        this.tamanhoNome = data[3];
+        this.nome = Arrays.copyOfRange(data,4,4 + tamanhoNome);
     }
 
     public byte[] toByteArray(){
-        byte[] byteArray = new byte[]{this.getDataIDADE(), this.getDataPESO()};
-        byteArray = ArrayUtils.addAll(byteArray, this.getDataALTURA());
-        byteArray = ArrayUtils.addAll(byteArray,this.getDataTAMANHO_NOME());
-        byteArray = ArrayUtils.addAll(byteArray,this.getDataNOME());
+        byte[] byteArray = new byte[]{this.getIdade(), this.getPeso()};
+        byteArray = ArrayUtils.addAll(byteArray, this.getAltura());
+        byteArray = ArrayUtils.addAll(byteArray,this.getTamanhoNome());
+        byteArray = ArrayUtils.addAll(byteArray,this.getNome());
         return byteArray;
     }
 
@@ -80,11 +97,11 @@ public class InfoUsuarioEntity {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("\nINFO USUARIO:\n");
-        stringBuilder.append("IDADE: " + this.dataIDADE + "\n");
-        stringBuilder.append("PESO: " + this.dataPESO + "\n");
-        stringBuilder.append("ALTURA: " + this.dataALTURA + "\n");
-        stringBuilder.append("TAMANHO NOME:" + this.dataTAMANHO_NOME + "\n");
-        stringBuilder.append("NOME: " + new String(this.dataNOME));
+        stringBuilder.append("IDADE: " + this.idade + "\n");
+        stringBuilder.append("PESO: " + this.peso + "\n");
+        stringBuilder.append("ALTURA: " + this.altura + "\n");
+        stringBuilder.append("TAMANHO NOME:" + this.tamanhoNome + "\n");
+        stringBuilder.append("NOME: " + new String(this.nome));
         return stringBuilder.toString();
     }
 }
