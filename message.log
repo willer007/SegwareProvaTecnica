@@ -1,0 +1,56 @@
+2020-07-26 01:13:37.278 [Thread-1] INFO  server-logger - PORT: 60291
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 01:13:38.006 [Thread-1] INFO  server-logger - PORT: 60291
+MESSAGE:
+ INIT: 0a
+ BYTES: 09
+ FRAME: a1
+ DATA: 74737465
+ CRC: 8d
+ END: 0d
+2020-07-26 01:13:38.919 [Thread-1] INFO  server-logger - PORT: 60291
+MESSAGE:
+ INIT: 0a
+ BYTES: 08
+ FRAME: a1
+ DATA: 737465
+ CRC: e0
+ END: 0d
+2020-07-26 01:13:39.711 [Thread-1] INFO  server-logger - PORT: 60291
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7364667364
+ CRC: 86
+ END: 0d
+2020-07-26 01:13:40.438 [Thread-1] INFO  server-logger - PORT: 60291
+MESSAGE:
+ INIT: 0a
+ BYTES: 09
+ FRAME: a1
+ DATA: 64667473
+ CRC: ea
+ END: 0d
+2020-07-26 01:13:41.039 [Thread-1] INFO  server-logger - PORT: 60291
+MESSAGE:
+ INIT: 0a
+ BYTES: 08
+ FRAME: a1
+ DATA: 646673
+ CRC: 4b
+ END: 0d
+2020-07-26 01:13:41.918 [Thread-1] INFO  server-logger - PORT: 60291
+MESSAGE:
+ INIT: 0a
+ BYTES: 08
+ FRAME: a1
+ DATA: 746577
+ CRC: ca
+ END: 0d
