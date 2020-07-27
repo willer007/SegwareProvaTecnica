@@ -13,11 +13,14 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Server {
     private ServerSocket server;
     private static int PORT = 55000;
     private static final Logger logger = LogManager.getLogger("server-logger");
+    private static ExecutorService executorService = Executors.newCachedThreadPool();
 
 
     //START SERVER ON LOCALHOST:55000
@@ -35,7 +38,8 @@ public class Server {
 
             logger.debug("received connection");
 
-            new Thread(() -> {
+            //EXECUTOR SERVICE FOR MULTICLIENT EFFICIENCY
+            executorService.submit(() -> {
                 logger.debug("started to listen connection");
 
                 try {
@@ -46,7 +50,7 @@ public class Server {
 
                 logger.debug("ended to listen connection");
 
-            }).start();
+            });
 
             logger.debug("ended connection");
 
@@ -85,7 +89,7 @@ public class Server {
             logger.info("PORT: " + client.getPort()  + message);
 
             //SPECIFIC HANDLER FOR EACH MESSAGE TYPE
-            frameEnum = FrameEnum.getEnumByBytes(message.getFrame()[0]);
+            frameEnum = FrameEnum.parseByteToFrameEnum(message.getFrame()[0]);
             switch (frameEnum) {
                 case MENSAGEM_TEXTO:
                     logger.debug("handling MENSAGEM_TEXTO");

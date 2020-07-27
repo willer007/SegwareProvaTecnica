@@ -4,10 +4,11 @@
     <list default="true" id="8fd59c3e-a3b5-476b-ae77-1be54ce6bdf5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/src/main/java/enums/FrameEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/enums/FrameEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/server_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/server_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/server_message.log" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/server_message.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/server_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_message.log" beforeDir="false" afterPath="$PROJECT_DIR$/server_message.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="Client" />
@@ -103,8 +104,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>

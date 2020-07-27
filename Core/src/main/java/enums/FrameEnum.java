@@ -14,7 +14,7 @@ public enum FrameEnum {
         byteValue = value;
     }
 
-    public static FrameEnum getEnumByBytes(byte byteValue){
+    public static FrameEnum parseByteToFrameEnum(byte byteValue){
         if(byteValue == (byte)0xA0){
             return FrameEnum.ACK;
         }else if(byteValue == (byte)(byte)0xA1) {

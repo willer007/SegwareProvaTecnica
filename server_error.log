@@ -3,3 +3,7 @@
 2020-07-26 19:47:21.258 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
 2020-07-26 19:50:35.123 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
 2020-07-26 19:57:53.504 [Thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 21:14:37.612 [pool-2-thread-2] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 21:17:23.812 [pool-2-thread-1] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 21:17:24.473 [pool-2-thread-3] ERROR server-logger - java.net.SocketException: Connection reset
+2020-07-26 21:17:25.563 [pool-2-thread-2] ERROR server-logger - java.net.SocketException: Connection reset

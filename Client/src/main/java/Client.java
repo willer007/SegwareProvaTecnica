@@ -47,9 +47,10 @@ public class Client {
     private MessageEntity sendMessage(String input, DataOutputStream out) throws IOException {
         MessageEntity requestMessage;
 
-        //PREPARE MESSAGE TO SEND
+        //READ MESSAGE TYPE IDENTIFIER
         int messageType = input.trim().charAt(0) - 48;
 
+        //BUILD MESSAGE BY TYPE IDENTIFIER
         switch (messageType) {
             case 1:
                 System.out.println("Digite a mensagem: ");
@@ -99,7 +100,8 @@ public class Client {
         //READ RESPONSE ACK
         if (messageUtils.readMessage(socket, response)) {
 
-            frameEnum = FrameEnum.getEnumByBytes(response.getFrame()[0]);
+            //PARSER FRAM
+            frameEnum = FrameEnum.parseByteToFrameEnum(response.getFrame()[0]);
             switch (frameEnum) {
 
                 case SOLICITACAO_DATA_HORA:

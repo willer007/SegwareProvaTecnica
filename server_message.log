@@ -134,3 +134,67 @@ MESSAGE:
  DATA: 7465737465
  CRC: b7
  END: 0d
+2020-07-26 21:14:17.053 [pool-2-thread-1] INFO  server-logger - PORT: 56509
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 21:16:50.568 [pool-2-thread-1] INFO  server-logger - PORT: 56683
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 21:16:56.998 [pool-2-thread-2] INFO  server-logger - PORT: 56690
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 21:17:00.391 [pool-2-thread-2] INFO  server-logger - PORT: 56690
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 21:17:06.991 [pool-2-thread-3] INFO  server-logger - PORT: 56704
+MESSAGE:
+ INIT: 0a
+ BYTES: 09
+ FRAME: a1
+ DATA: 74657465
+ CRC: 52
+ END: 0d
+2020-07-26 21:17:10.919 [pool-2-thread-3] INFO  server-logger - PORT: 56704
+MESSAGE:
+ INIT: 0a
+ BYTES: 08
+ FRAME: a1
+ DATA: 746565
+ CRC: b4
+ END: 0d
+2020-07-26 21:17:16.927 [pool-2-thread-2] INFO  server-logger - PORT: 56690
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
+2020-07-26 21:17:21.695 [pool-2-thread-1] INFO  server-logger - PORT: 56683
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 7465737465
+ CRC: b7
+ END: 0d
