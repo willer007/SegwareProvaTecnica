@@ -13,11 +13,10 @@ entities\InfoUsuarioEntity.class
 entities\MessageEntity.class
 crccalc\Crc16.class
 crccalc\Crc64.class
-factories\MessageFactory.class
 crccalc\CrcHelper.class
 entities\TextoMessageEntity.class
 utils\MessageUtils.class
 converters\ByteToIntConverter.class
-utils\HibernateUtils.class
 converters\ByteArrayToStringConverter.class
 entities\SolicitacaoDataHoraMessageEntity.class
+factories\MessageFactorySingleton.class

@@ -20,7 +20,6 @@ public class Client {
     private static int PORT = 55000;
     private static final Logger logger = LogManager.getLogger("client-logger");
     MessageUtils messageUtils = new MessageUtils();
-    MessageFactorySingleton messageFactorySingleton = new MessageFactorySingleton();
 
     FrameEnum frameEnum;
 
@@ -55,7 +54,7 @@ public class Client {
             case 1:
                 System.out.println("Digite a mensagem: ");
                 input = scanner.nextLine();
-                requestMessage = messageFactorySingleton.buildTextMessage(input);
+                requestMessage = MessageFactorySingleton.buildTextMessage(input);
                 break;
 
             case 2:
@@ -72,13 +71,13 @@ public class Client {
                 String nome = scanner.nextLine();
 
                 InfoUsuarioEntity infoUsuarioDataEntity = new InfoUsuarioEntity((byte) idade, (byte) peso, (byte) altura, (byte) nome.length(), nome.getBytes());
-                requestMessage = messageFactorySingleton.buildInfoUsuarioMessage(infoUsuarioDataEntity);
+                requestMessage = MessageFactorySingleton.buildInfoUsuarioMessage(infoUsuarioDataEntity);
                 break;
 
             case 3:
                 System.out.println("O timezone: ");
                 input = scanner.nextLine();
-                requestMessage = messageFactorySingleton.buildSolicitacaoDataHoraMessage(input);
+                requestMessage = MessageFactorySingleton.buildSolicitacaoDataHoraMessage(input);
                 break;
 
             default:
@@ -163,7 +162,7 @@ public class Client {
         while (true) {
 
             //WRITE MESSAGE
-            out.write(messageFactorySingleton.buildTextMessage("TESTE").toByteArray());
+            out.write(MessageFactorySingleton.buildTextMessage("TESTE").toByteArray());
 
             //LOG MESSAGE TO FILE LOGGER
             logger.info("PORT: " + socket.getPort() + "TESTE ENVIADO");

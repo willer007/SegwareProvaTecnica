@@ -1,0 +1,10 @@
+entities\MessageEntityTest.class
+factories\AckFactoryTest.class
+utils\MessageUtilsTest.class
+converters\ByteArrayToHexStringConverterTest.class
+factories\MessageFactorySingletonTest.class
+enums\FrameEnumTest.class
+crccalc\CrcCalculatorTest.class
+converters\ByteToIntConverterTest.class
+converters\ByteArrayToStringConverterTest.class
+repositories\MessageRepositoryTest.class

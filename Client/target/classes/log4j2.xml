@@ -28,7 +28,6 @@
     <Loggers>
 
         <logger name="client-logger" level="all" additivity="false">
-            <AppenderRef ref="Console"/>
             <AppenderRef ref="LogFileMessage"/>
             <AppenderRef ref="LogFileError"/>
         </logger>

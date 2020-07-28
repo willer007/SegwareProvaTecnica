@@ -3,13 +3,12 @@ C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\convert
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\entities\InfoUsuarioEntity.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\converters\ByteToIntConverter.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\crccalc\CrcHelper.java
-C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\utils\HibernateUtils.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\entities\InfoUsuarioMessageEntity.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\factories\AckFactory.java
-C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\factories\MessageFactory.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\repositories\MessageRepository.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\entities\MessageEntity.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\entities\SolicitacaoDataHoraMessageEntity.java
+C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\factories\MessageFactorySingleton.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\entities\InvalidMessageEntity.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\crccalc\AlgoParams.java
 C:\Users\Willer\Desktop\projects\segware\ProvaTecnica\Core\src\main\java\entities\TextoMessageEntity.java
