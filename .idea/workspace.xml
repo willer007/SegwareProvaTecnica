@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd59c3e-a3b5-476b-ae77-1be54ce6bdf5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/Client-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/classes/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/classes/Client$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/classes/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/META-INF/Core.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/test-classes/META-INF/Core.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/server_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/server_message.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/Server-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/server_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/server_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/server_message.log" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/server_message.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/ServerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/test-classes/ServerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_message.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/server_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_message.log" beforeDir="false" afterPath="$PROJECT_DIR$/server_message.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -99,7 +99,7 @@ public class Client {
         //READ RESPONSE ACK
         if (messageUtils.readMessage(socket, response)) {
 
-            //PARSER FRAM
+            //PARSE FRAME
             frameEnum = FrameEnum.parseByteToFrameEnum(response.getFrame()[0]);
             switch (frameEnum) {
 
@@ -157,6 +157,7 @@ public class Client {
         }
     }
 
+    //USED FOR TESTS
     private void startDemo() throws IOException {
         DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
         while (true) {
@@ -178,6 +179,7 @@ public class Client {
         client.start();
     }
 
+    //USED FOR TESTS
     public static void startClientDemo() throws Exception {
         Client client = new Client(InetAddress.getLocalHost());
         System.out.println("\r\nConnected to Server: " + client.socket.getInetAddress());
