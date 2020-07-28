@@ -22,6 +22,11 @@ public class SolicitacaoDataHoraMessageEntity extends MessageEntity<SolicitacaoD
         this.timezone = timezone;
     }
 
+    public void setTimezone(byte [] timezone) {
+        this.timezone = new String(timezone);
+    }
+
+
 
 
 

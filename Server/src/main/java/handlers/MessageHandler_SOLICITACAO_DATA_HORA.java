@@ -15,22 +15,31 @@ public class MessageHandler_SOLICITACAO_DATA_HORA  implements IMessageHandler<So
     @Override
     public SolicitacaoDataHoraMessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
        try {
+
+           //CREATE SPECIFIC MESSAGE
+           SolicitacaoDataHoraMessageEntity solicitacaoDataHoraMessageEntity =
+                   new SolicitacaoDataHoraMessageEntity().fromMessageEntity(message);
+
+           solicitacaoDataHoraMessageEntity.setTimezone(message.getData());
+
+           //PROCESS DATE
            Instant now = Instant.now();
-           ZonedDateTime date = now.atZone(ZoneId.of(new String(message.getData())));
+           ZonedDateTime date = now.atZone(ZoneId.of(solicitacaoDataHoraMessageEntity.getTimezone()));
+
+           //WRITE RESPONSE
            IOUtils.write(AckFactory.createAckA3(date).toByteArray(), out);
 
-           SolicitacaoDataHoraMessageEntity solicitacaoDataHoraMessageEntity =
-                   new SolicitacaoDataHoraMessageEntity().fromMessageEntity(message);
-
-           solicitacaoDataHoraMessageEntity.setTimezone(new String(message.getData()));
-
            return solicitacaoDataHoraMessageEntity;
+
        }catch (Exception e){
 
+           //IF FAIL RETURN ACK0
            IOUtils.write(AckFactory.createAckA0().toByteArray(), out);
+
            SolicitacaoDataHoraMessageEntity solicitacaoDataHoraMessageEntity =
                    new SolicitacaoDataHoraMessageEntity().fromMessageEntity(message);
-           solicitacaoDataHoraMessageEntity.setTimezone(new String(message.getData()));
+           solicitacaoDataHoraMessageEntity.setTimezone(message.getData());
+
            return solicitacaoDataHoraMessageEntity;
 
        }

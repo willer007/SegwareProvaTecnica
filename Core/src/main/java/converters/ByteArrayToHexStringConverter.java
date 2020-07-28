@@ -1,5 +1,6 @@
 package converters;
 
+import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.StringUtils;
 
@@ -25,6 +26,10 @@ public class ByteArrayToHexStringConverter implements AttributeConverter<byte[] 
         if (StringUtils.isBlank(dbData))
             return new byte[0];
 
-        return dbData.getBytes();
+        try {
+            return Hex.decodeHex(dbData.toCharArray());
+        } catch (DecoderException e) {
+            return new byte[0];
+        }
     }
 }

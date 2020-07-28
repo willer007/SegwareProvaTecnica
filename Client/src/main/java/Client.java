@@ -2,7 +2,7 @@ import entities.InfoUsuarioEntity;
 import entities.MessageEntity;
 import entities.SolicitacaoDataHoraEntity;
 import enums.FrameEnum;
-import factories.MessageFactory;
+import factories.MessageFactorySingleton;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import utils.MessageUtils;
@@ -20,7 +20,7 @@ public class Client {
     private static int PORT = 55000;
     private static final Logger logger = LogManager.getLogger("client-logger");
     MessageUtils messageUtils = new MessageUtils();
-    MessageFactory messageFactory = new MessageFactory();
+    MessageFactorySingleton messageFactorySingleton = new MessageFactorySingleton();
 
     FrameEnum frameEnum;
 
@@ -55,7 +55,7 @@ public class Client {
             case 1:
                 System.out.println("Digite a mensagem: ");
                 input = scanner.nextLine();
-                requestMessage = messageFactory.buildTextMessage(input);
+                requestMessage = messageFactorySingleton.buildTextMessage(input);
                 break;
 
             case 2:
@@ -72,13 +72,13 @@ public class Client {
                 String nome = scanner.nextLine();
 
                 InfoUsuarioEntity infoUsuarioDataEntity = new InfoUsuarioEntity((byte) idade, (byte) peso, (byte) altura, (byte) nome.length(), nome.getBytes());
-                requestMessage = messageFactory.buildInfoUsuarioMessage(infoUsuarioDataEntity);
+                requestMessage = messageFactorySingleton.buildInfoUsuarioMessage(infoUsuarioDataEntity);
                 break;
 
             case 3:
                 System.out.println("O timezone: ");
                 input = scanner.nextLine();
-                requestMessage = messageFactory.buildSolicitacaoDataHoraMessage(input);
+                requestMessage = messageFactorySingleton.buildSolicitacaoDataHoraMessage(input);
                 break;
 
             default:

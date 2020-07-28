@@ -1,16 +1,19 @@
 package repositories;
 
-import entities.MessageEntity;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import utils.HibernateUtils;
+import org.hibernate.cfg.Configuration;
 
 public class MessageRepository <T>{
 
+    private static SessionFactory sessionFactory;
+
+
     public boolean saveMessage(T messageEntity){
         Transaction transaction = null;
-
-        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+        sessionFactory = new Configuration().configure().buildSessionFactory();
+        try (Session session = sessionFactory.openSession()) {
             // start a transaction
             transaction = session.beginTransaction();
             // save the student objects
@@ -28,4 +31,6 @@ public class MessageRepository <T>{
 
         return true;
     }
+
+
 }

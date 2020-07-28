@@ -19,4 +19,8 @@ public class TextoMessageEntity extends MessageEntity<TextoMessageEntity> {
         this.texto = texto;
     }
 
+    public void setTexto(byte[] texto) {
+        this.texto = new String(texto);
+    }
+
 }

@@ -18,7 +18,7 @@ public class MessageHandler_INFO_USUARIO implements IMessageHandler<InfoUsuarioM
 
         IOUtils.write(AckFactory.createAckA0().toByteArray(), out);
         InfoUsuarioMessageEntity infoUsuarioMessageEntity = new InfoUsuarioMessageEntity().fromMessageEntity(message);
-        infoUsuarioMessageEntity.setInfoUsuarioEntity( new InfoUsuarioEntity(message.getData()));
+        infoUsuarioMessageEntity.setInfoUsuarioEntity(message.getData());
         return  infoUsuarioMessageEntity;
     }
 }

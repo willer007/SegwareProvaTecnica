@@ -23,6 +23,9 @@ public class InfoUsuarioMessageEntity extends MessageEntity<InfoUsuarioMessageEn
         this.infoUsuarioEntity = infoUsuarioEntity;
     }
 
+    public void setInfoUsuarioEntity(byte[] infoUsuarioEntity) {
+        this.infoUsuarioEntity = new InfoUsuarioEntity(infoUsuarioEntity);
+    }
 
 
 }

@@ -15,7 +15,7 @@ public class MessageHandler_MENSAGEM_TEXTO implements IMessageHandler<TextoMessa
     public TextoMessageEntity handleMessage(MessageEntity message, OutputStream out) throws IOException {
         IOUtils.write(AckFactory.createAckA0().toByteArray(), out);
         TextoMessageEntity textoMessageEntity = new TextoMessageEntity().fromMessageEntity(message);
-        textoMessageEntity.setTexto(new String(message.getData()));
+        textoMessageEntity.setTexto(message.getData());
         return  textoMessageEntity;
     }
 }

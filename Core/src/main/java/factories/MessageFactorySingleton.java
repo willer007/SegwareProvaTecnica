@@ -4,11 +4,11 @@ import entities.InfoUsuarioEntity;
 import entities.MessageEntity;
 import utils.MessageUtils;
 
-public class MessageFactory {
+public class MessageFactorySingleton {
 
-    private MessageUtils messageUtils = new MessageUtils();
+    private static MessageUtils messageUtils = new MessageUtils();
 
-    public MessageEntity buildMessage(byte frame, byte[] data){
+    public static MessageEntity buildMessage(byte frame, byte[] data){
         MessageEntity messageEntity = new MessageEntity(
                 (byte) 0x0A,
                 (byte)(5 + data.length),
@@ -23,7 +23,7 @@ public class MessageFactory {
 
     }
 
-    public MessageEntity buildTextMessage(String text){
+    public static MessageEntity buildTextMessage(String text){
 
         byte [] data =  text.getBytes();
 
@@ -31,13 +31,13 @@ public class MessageFactory {
 
     }
 
-    public MessageEntity buildInfoUsuarioMessage(InfoUsuarioEntity infoUsuarioEntity){
+    public static MessageEntity buildInfoUsuarioMessage(InfoUsuarioEntity infoUsuarioEntity){
 
         return buildMessage((byte) 0xA2, infoUsuarioEntity.toByteArray());
     }
 
 
-    public MessageEntity buildSolicitacaoDataHoraMessage(String text){
+    public static MessageEntity buildSolicitacaoDataHoraMessage(String text){
         byte [] data =  text.getBytes();
 
         return buildMessage((byte) 0xA3,data);
