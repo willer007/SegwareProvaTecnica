@@ -1,3 +1,11 @@
+#Ambiente de desenvolvimento
+
+Java 8 
+
+Windows 10 
+
+IntelliJ IDEA 
+
 # Primeiro carregamento do projeto
 
 Caso haja problemas quanto ao reconhecimento dos submodulos como dependências
