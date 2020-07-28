@@ -132,14 +132,17 @@ public class Server {
         return this.server.getInetAddress();
     }
 
-    public int getPort() {        return this.server.getLocalPort();
+    public int getPort() { return this.server.getLocalPort(); }
+
+    public static void startServer() throws Exception {
+        Server server = new Server();
+        System.out.println("\r\nRunning Server: " + "Host=" + server.getSocketAddress().getHostAddress() + " Port=" + server.getPort());
+        server.receiveIncomingConnections();
 
     }
 
     public static void main(String[] args) throws Exception {
-        Server server = new Server();
-        System.out.println("\r\nRunning Server: " + "Host=" + server.getSocketAddress().getHostAddress() + " Port=" + server.getPort());
-        server.receiveIncomingConnections();
+        startServer();
     }
 
 

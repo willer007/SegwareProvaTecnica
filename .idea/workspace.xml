@@ -2,33 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd59c3e-a3b5-476b-ae77-1be54ce6bdf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/converters/ByteArrayToHexStringConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/converters/ByteArrayToStringConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/converters/ByteToIntConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/crccalc/CrcCalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/entities/MessageEntityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/enums/FrameEnumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/factories/AckFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/factories/MessageFactorySingletonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/repositories/MessageRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/src/test/java/utils/MessageUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/test/java/ServerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/target/classes/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/classes/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/Client/target/classes/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/converters/ByteArrayToHexStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/converters/ByteArrayToHexStringConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/entities/InfoUsuarioMessageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/entities/InfoUsuarioMessageEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/entities/SolicitacaoDataHoraMessageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/entities/SolicitacaoDataHoraMessageEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/entities/TextoMessageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/entities/TextoMessageEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/factories/MessageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/factories/MessageFactorySingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/repositories/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/repositories/MessageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/utils/HibernateUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/converters/ByteArrayToHexStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/converters/ByteArrayToHexStringConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/factories/MessageFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/repositories/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/repositories/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/utils/HibernateUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_INFO_USUARIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_INFO_USUARIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_MENSAGEM_TEXTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_MENSAGEM_TEXTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_SOLICITACAO_DATA_HORA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/handlers/MessageHandler_SOLICITACAO_DATA_HORA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/target/test-classes/utils/MessageUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/test-classes/utils/MessageUtilsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/classes/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/Server$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_INFO_USUARIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_INFO_USUARIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_MENSAGEM_TEXTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_MENSAGEM_TEXTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_SOLICITACAO_DATA_HORA.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/classes/handlers/MessageHandler_SOLICITACAO_DATA_HORA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,11 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
       <recent name="converters" />
       <recent name="utils" />
       <recent name="repositories" />
       <recent name="factories" />
-      <recent name="enums" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="converters" />
@@ -117,18 +105,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MessageUtilsTest.checkMessageIntegrity">
-    <configuration name="MessageFactorySingletonTest.buildInfoUsuarioMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ServerTest.LoadTest">
+    <configuration name="ByteArrayToHexStringConverterTest.convertToDatabaseColumn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="factories.*" />
+          <option name="PATTERN" value="converters.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="factories" />
-      <option name="MAIN_CLASS_NAME" value="factories.MessageFactorySingletonTest" />
-      <option name="METHOD_NAME" value="buildInfoUsuarioMessage" />
+      <option name="PACKAGE_NAME" value="converters" />
+      <option name="MAIN_CLASS_NAME" value="converters.ByteArrayToHexStringConverterTest" />
+      <option name="METHOD_NAME" value="convertToDatabaseColumn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,22 +133,6 @@
       <option name="PACKAGE_NAME" value="factories" />
       <option name="MAIN_CLASS_NAME" value="factories.MessageFactorySingletonTest" />
       <option name="METHOD_NAME" value="buildSolicitacaoDataHoraMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MessageFactorySingletonTest.buildTextMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="factories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="factories" />
-      <option name="MAIN_CLASS_NAME" value="factories.MessageFactorySingletonTest" />
-      <option name="METHOD_NAME" value="buildTextMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,6 +170,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServerTest.LoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ServerTest" />
+      <option name="METHOD_NAME" value="LoadTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="enums in Core" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Core" />
       <extension name="coverage">
@@ -217,19 +199,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.enums in Core" />
-      <item itemvalue="JUnit.MessageFactorySingletonTest.buildTextMessage" />
-      <item itemvalue="JUnit.MessageFactorySingletonTest.buildInfoUsuarioMessage" />
       <item itemvalue="JUnit.MessageFactorySingletonTest.buildSolicitacaoDataHoraMessage" />
       <item itemvalue="JUnit.MessageRepositoryTest.saveMessage" />
       <item itemvalue="JUnit.MessageUtilsTest.checkMessageIntegrity" />
+      <item itemvalue="JUnit.ByteArrayToHexStringConverterTest.convertToDatabaseColumn" />
+      <item itemvalue="JUnit.ServerTest.LoadTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServerTest.LoadTest" />
+        <item itemvalue="JUnit.ByteArrayToHexStringConverterTest.convertToDatabaseColumn" />
         <item itemvalue="JUnit.MessageUtilsTest.checkMessageIntegrity" />
         <item itemvalue="JUnit.MessageRepositoryTest.saveMessage" />
         <item itemvalue="JUnit.MessageFactorySingletonTest.buildSolicitacaoDataHoraMessage" />
-        <item itemvalue="JUnit.MessageFactorySingletonTest.buildInfoUsuarioMessage" />
-        <item itemvalue="JUnit.MessageFactorySingletonTest.buildTextMessage" />
       </list>
     </recent_temporary>
   </component>

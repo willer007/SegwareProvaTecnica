@@ -1,0 +1,1072 @@
+2020-07-27 21:15:14.724 [pool-2-thread-1] INFO  server-logger - PORT: 60450
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.801 [pool-2-thread-2] INFO  server-logger - PORT: 60451
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.807 [pool-2-thread-3] INFO  server-logger - PORT: 60439
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.809 [pool-2-thread-6] INFO  server-logger - PORT: 60442
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.809 [pool-2-thread-4] INFO  server-logger - PORT: 60440
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.809 [pool-2-thread-7] INFO  server-logger - PORT: 60441
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.811 [pool-2-thread-5] INFO  server-logger - PORT: 60438
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.901 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.901 [pool-2-thread-8] INFO  server-logger - PORT: 60443
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.997 [pool-2-thread-10] INFO  server-logger - PORT: 60445
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:14.998 [pool-2-thread-11] INFO  server-logger - PORT: 60453
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.097 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.098 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.198 [pool-2-thread-14] INFO  server-logger - PORT: 60455
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.345 [pool-2-thread-15] INFO  server-logger - PORT: 60456
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.471 [pool-2-thread-16] INFO  server-logger - PORT: 60457
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.533 [pool-2-thread-17] INFO  server-logger - PORT: 60458
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.634 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.735 [pool-2-thread-19] INFO  server-logger - PORT: 60463
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:15.836 [pool-2-thread-20] INFO  server-logger - PORT: 60464
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.241 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.242 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.241 [pool-2-thread-8] INFO  server-logger - PORT: 60443
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.243 [pool-2-thread-5] INFO  server-logger - PORT: 60438
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.245 [pool-2-thread-15] INFO  server-logger - PORT: 60456
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.241 [pool-2-thread-7] INFO  server-logger - PORT: 60441
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.251 [pool-2-thread-14] INFO  server-logger - PORT: 60455
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.252 [pool-2-thread-4] INFO  server-logger - PORT: 60440
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.253 [pool-2-thread-16] INFO  server-logger - PORT: 60457
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.256 [pool-2-thread-20] INFO  server-logger - PORT: 60464
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.257 [pool-2-thread-2] INFO  server-logger - PORT: 60451
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.260 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.261 [pool-2-thread-17] INFO  server-logger - PORT: 60458
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.261 [pool-2-thread-10] INFO  server-logger - PORT: 60445
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.262 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.262 [pool-2-thread-11] INFO  server-logger - PORT: 60453
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.264 [pool-2-thread-6] INFO  server-logger - PORT: 60442
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.265 [pool-2-thread-3] INFO  server-logger - PORT: 60439
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.267 [pool-2-thread-1] INFO  server-logger - PORT: 60450
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:20.266 [pool-2-thread-19] INFO  server-logger - PORT: 60463
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.029 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.186 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.191 [pool-2-thread-1] INFO  server-logger - PORT: 60450
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.213 [pool-2-thread-5] INFO  server-logger - PORT: 60438
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.372 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.395 [pool-2-thread-2] INFO  server-logger - PORT: 60451
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.396 [pool-2-thread-14] INFO  server-logger - PORT: 60455
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.487 [pool-2-thread-17] INFO  server-logger - PORT: 60458
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.498 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.500 [pool-2-thread-4] INFO  server-logger - PORT: 60440
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.618 [pool-2-thread-8] INFO  server-logger - PORT: 60443
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.644 [pool-2-thread-3] INFO  server-logger - PORT: 60439
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.646 [pool-2-thread-10] INFO  server-logger - PORT: 60445
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.663 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.678 [pool-2-thread-16] INFO  server-logger - PORT: 60457
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.680 [pool-2-thread-7] INFO  server-logger - PORT: 60441
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.692 [pool-2-thread-6] INFO  server-logger - PORT: 60442
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.749 [pool-2-thread-20] INFO  server-logger - PORT: 60464
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.754 [pool-2-thread-19] INFO  server-logger - PORT: 60463
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.800 [pool-2-thread-11] INFO  server-logger - PORT: 60453
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.816 [pool-2-thread-1] INFO  server-logger - PORT: 60450
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.831 [pool-2-thread-5] INFO  server-logger - PORT: 60438
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:21.851 [pool-2-thread-15] INFO  server-logger - PORT: 60456
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.171 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.289 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.292 [pool-2-thread-2] INFO  server-logger - PORT: 60451
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.550 [pool-2-thread-17] INFO  server-logger - PORT: 60458
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.568 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.606 [pool-2-thread-10] INFO  server-logger - PORT: 60445
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.694 [pool-2-thread-4] INFO  server-logger - PORT: 60440
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.726 [pool-2-thread-14] INFO  server-logger - PORT: 60455
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.784 [pool-2-thread-6] INFO  server-logger - PORT: 60442
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.792 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.841 [pool-2-thread-19] INFO  server-logger - PORT: 60463
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.865 [pool-2-thread-3] INFO  server-logger - PORT: 60439
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.866 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.883 [pool-2-thread-15] INFO  server-logger - PORT: 60456
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.914 [pool-2-thread-8] INFO  server-logger - PORT: 60443
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:22.936 [pool-2-thread-7] INFO  server-logger - PORT: 60441
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.106 [pool-2-thread-17] INFO  server-logger - PORT: 60458
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.195 [pool-2-thread-1] INFO  server-logger - PORT: 60450
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.227 [pool-2-thread-16] INFO  server-logger - PORT: 60457
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.325 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.433 [pool-2-thread-11] INFO  server-logger - PORT: 60453
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.443 [pool-2-thread-6] INFO  server-logger - PORT: 60442
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.476 [pool-2-thread-2] INFO  server-logger - PORT: 60451
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.481 [pool-2-thread-5] INFO  server-logger - PORT: 60438
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.560 [pool-2-thread-20] INFO  server-logger - PORT: 60464
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.656 [pool-2-thread-10] INFO  server-logger - PORT: 60445
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.799 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.807 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.819 [pool-2-thread-8] INFO  server-logger - PORT: 60443
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.864 [pool-2-thread-19] INFO  server-logger - PORT: 60463
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:23.907 [pool-2-thread-7] INFO  server-logger - PORT: 60441
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.109 [pool-2-thread-3] INFO  server-logger - PORT: 60439
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.127 [pool-2-thread-15] INFO  server-logger - PORT: 60456
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.134 [pool-2-thread-1] INFO  server-logger - PORT: 60450
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.147 [pool-2-thread-20] INFO  server-logger - PORT: 60464
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.154 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.161 [pool-2-thread-16] INFO  server-logger - PORT: 60457
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.257 [pool-2-thread-6] INFO  server-logger - PORT: 60442
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.299 [pool-2-thread-4] INFO  server-logger - PORT: 60440
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.308 [pool-2-thread-17] INFO  server-logger - PORT: 60458
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.320 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.386 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.405 [pool-2-thread-8] INFO  server-logger - PORT: 60443
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.436 [pool-2-thread-19] INFO  server-logger - PORT: 60463
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.566 [pool-2-thread-5] INFO  server-logger - PORT: 60438
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.570 [pool-2-thread-2] INFO  server-logger - PORT: 60451
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.591 [pool-2-thread-11] INFO  server-logger - PORT: 60453
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.675 [pool-2-thread-10] INFO  server-logger - PORT: 60445
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.737 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.739 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.818 [pool-2-thread-7] INFO  server-logger - PORT: 60441
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:24.902 [pool-2-thread-14] INFO  server-logger - PORT: 60455
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.082 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.105 [pool-2-thread-4] INFO  server-logger - PORT: 60440
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.116 [pool-2-thread-6] INFO  server-logger - PORT: 60442
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.234 [pool-2-thread-20] INFO  server-logger - PORT: 60464
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.372 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.428 [pool-2-thread-3] INFO  server-logger - PORT: 60439
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.470 [pool-2-thread-19] INFO  server-logger - PORT: 60463
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.488 [pool-2-thread-1] INFO  server-logger - PORT: 60450
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.563 [pool-2-thread-16] INFO  server-logger - PORT: 60457
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.698 [pool-2-thread-15] INFO  server-logger - PORT: 60456
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.710 [pool-2-thread-18] INFO  server-logger - PORT: 60460
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.728 [pool-2-thread-9] INFO  server-logger - PORT: 60452
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.758 [pool-2-thread-11] INFO  server-logger - PORT: 60453
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.793 [pool-2-thread-17] INFO  server-logger - PORT: 60458
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.796 [pool-2-thread-2] INFO  server-logger - PORT: 60451
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.859 [pool-2-thread-12] INFO  server-logger - PORT: 60448
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.879 [pool-2-thread-5] INFO  server-logger - PORT: 60438
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.903 [pool-2-thread-8] INFO  server-logger - PORT: 60443
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d
+2020-07-27 21:15:25.921 [pool-2-thread-13] INFO  server-logger - PORT: 60454
+MESSAGE:
+ INIT: 0a
+ BYTES: 0a
+ FRAME: a1
+ DATA: 5445535445
+ CRC: 10
+ END: 0d

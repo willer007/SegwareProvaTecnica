@@ -158,10 +158,35 @@ public class Client {
         }
     }
 
-    public static void main(String[] args) throws Exception {
+    private void startDemo() throws IOException {
+        DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
+        while (true) {
 
+            //WRITE MESSAGE
+            out.write(messageFactorySingleton.buildTextMessage("TESTE").toByteArray());
+
+            //LOG MESSAGE TO FILE LOGGER
+            logger.info("PORT: " + socket.getPort() + "TESTE ENVIADO");
+
+            //READ RESPONSE FROM SERVER
+            readResponse();
+        }
+    }
+
+    public static void startClient() throws Exception {
         Client client = new Client(InetAddress.getLocalHost());
         System.out.println("\r\nConnected to Server: " + client.socket.getInetAddress());
         client.start();
+    }
+
+    public static void startClientDemo() throws Exception {
+        Client client = new Client(InetAddress.getLocalHost());
+        System.out.println("\r\nConnected to Server: " + client.socket.getInetAddress());
+        client.startDemo();
+    }
+
+
+    public static void main(String[] args) throws Exception {
+        startClient();
     }
 }
